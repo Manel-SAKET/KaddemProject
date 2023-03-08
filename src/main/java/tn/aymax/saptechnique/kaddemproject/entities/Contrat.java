@@ -1,11 +1,12 @@
 package tn.aymax.saptechnique.kaddemproject.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "Contrat")
-public class Contrat {
+public class Contrat implements Serializable {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idContrat;
