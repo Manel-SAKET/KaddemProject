@@ -9,7 +9,7 @@ public interface IEtudiantServices {
     List<Etudiant> retreiveAllEtudiants();
     Etudiant addEtudiant(Etudiant e);
     Etudiant updateEtudiant(Etudiant e);
-    Optional<Etudiant> retreiveEtudiant (Integer idEtudiant);
-    void removeEtudiant(Integer idEtudiant);
-    public void assignEtudiantToDepartement (Integer etudiantId , Integer departementId );
+    Optional<Etudiant> retreiveEtudiant (int idEtudiant);
+    void removeEtudiant(int idEtudiant);
+    public void assignEtudiantToDepartement (int etudiantId , int departementId );
 }

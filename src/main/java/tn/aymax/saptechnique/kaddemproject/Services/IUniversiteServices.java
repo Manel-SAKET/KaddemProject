@@ -15,5 +15,5 @@ public interface IUniversiteServices {
     Universite updateUniversite(Universite u);
     public Optional<Universite> retrieveUniversite(Integer idUniversie);
     public void assignUniversiteToDepartement (Integer idUniversite, Integer idDepartement);
-    abstract Map<String, Integer> getMontantContartEntreDeuxDate(int idUniv, ChronoLocalDate startDate, ChronoLocalDate endDate);
+    public Map<String, Integer> getMontantContartEntreDeuxDate(int idUniv, ChronoLocalDate startDate, ChronoLocalDate endDate);
 }

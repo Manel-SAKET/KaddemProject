@@ -30,17 +30,17 @@ public class IEtudiantServicesImp implements IEtudiantServices {
     }
 
     @Override
-    public Optional<Etudiant> retreiveEtudiant(Integer idEtudiant) {
+    public Optional<Etudiant> retreiveEtudiant(int idEtudiant) {
         return etudiantRepository.findById(idEtudiant);
     }
 
     @Override
-    public void removeEtudiant(Integer idEtudiant) {
+    public void removeEtudiant(int idEtudiant) {
         etudiantRepository.deleteById(idEtudiant);
     }
 
     @Override
-    public void assignEtudiantToDepartement(Integer etudiantId, Integer departementId) {
+    public void assignEtudiantToDepartement(int etudiantId, int departementId) {
         Departement departement = departementRepository.findById(departementId).orElse(null);
         etudiantRepository.findById(etudiantId).orElse(null).setDepartement(departement);
     }
