@@ -12,5 +12,5 @@ public interface IContratServices {
     Contrat addContrat(Contrat ce);
     Optional<Contrat> retrieveContrat (Integer idContrat);
     void removeContrat(Integer idContrat);
-
+    String retrieveAndUpdateStatusContrat();
 }
